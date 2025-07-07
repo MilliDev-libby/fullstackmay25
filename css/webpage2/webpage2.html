@@ -1,0 +1,221 @@
+<html>
+<head>
+    <title>The Dental Hygiene Association</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background-color: #fff;
+        }
+
+        header{
+            text-align: center;
+            padding: 20px;
+        }
+
+        header img{
+            float: left;
+            width: 80px;
+            margin-left: 20px;
+        }
+
+        header h1{
+            font-size: 28px;
+            margin-top: 20px;
+            color: #444;
+        }
+        
+        nav{
+            background-color: #e9f4f9;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+        }
+
+        nav a{
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0077aa;
+            font-weight: bold;
+        }
+
+        .banner{
+            background-color: #f3f3f3;
+            text-align: center;
+            padding: 20px;
+            font-size: 22px;
+            font-style: italic;
+            color: #444;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .main-content{
+            display: flex;
+            justify-content: center;
+            padding: 30px 10px;
+            gap: 20px;
+        }
+
+        .box{
+            background-color: #356468;
+            border-radius: 8px;
+            padding: 20px;
+            width: 280px;
+        }
+
+        .box h3{
+            color: #333;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .events ul{
+            padding-left: 20px;
+        }
+
+        .events ul li{
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .dentist-form input{
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .dentist-form label{
+            font-size: 14px;
+        }
+
+        .dentist-form .checkboxes {
+            margin-top: 5px;
+            align-items: inline;
+            display:inline-block;
+        }
+
+        .dentist-form .checkboxes label{
+            display: inline-block;
+            margin: 10px 5px 5px 10px;
+            align-items: center;
+        }
+
+        .tips ul{
+            padding-left: 20px;
+        }
+
+        .tips ul li:nth-child(even){
+            color: #a77;
+        }
+
+        @media (max-width:900px) {
+            .main-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            header img {
+                float: none;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="tooth for webpage.png" alt="cartoon tooth logo">
+        <h1>
+            The Dental Hygiene Association
+        </h1>
+    </header>
+    
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Adults</a>
+        <a href="#">Kids</a>
+        <a href="#">News</a>
+        <a href="#">FAQ</a>
+        <a href="#">Glossary</a>
+    </nav>
+
+    <div class="banner">
+        Only 46% of households buy toothbrushes
+    </div>
+
+    <div class="main-content">
+        <div class="box events">
+            <h3>
+                News & Events
+            </h3>
+            <p>
+                Click to find out more!
+            </p>
+            <ul>
+                <li>
+                    Irish Academy of Aesthetic Dentistry (IAAD) Meeting
+                </li>
+                <li>
+                    Irish dentists report on eating disorders
+                </li>
+                <li>
+                    IDA Annual Conference 2014
+                </li>
+                <li>
+                    Maternal saliva predicts dental health
+                </li>
+            </ul>
+        </div>
+
+        <div class="box dentist-form">
+            <h3>
+                Find a Dentist
+            </h3>
+            <p>
+                Looking for a dentist in your area? Enter any details below and search for dentists near you!
+            </p>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="last name">
+            <input type="text" placeholder="Location">
+            <div class="checkboxes">
+                <label>
+                    <input type="checkbox"> Orthodontist </label>
+                    <label>
+                        <input type="checkbox"> General Dental Practitioner
+                    </label>
+            </div>
+        </div>
+        <div class="box tips">
+            <h3>
+                Quick tips
+            </h3>
+            <ul>
+                <li>
+                    Change your toothbrush every 3 months
+                </li>
+                <li>
+                    Clean your tongue as well as your teeth
+                </li>
+                <li>
+                    Floss every day
+                </li>
+                <li>
+                    See your dentist every 6 months
+                </li>
+                <li>
+                    Cut down on how often you have sweet drinks and foods
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

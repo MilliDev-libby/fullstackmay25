@@ -1,0 +1,103 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #b0bfd4;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #3b5998;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    
+}
+
+.logo-and-login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #1877f2;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #1877f2;
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.login-form input {
+    margin-right: 5px;
+    padding: 5px;
+    justify-content: right;
+}
+
+.login-form button{
+    background-color: #4267b2;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.info {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.signup-form {
+    width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.signup-form h2{
+    margin-top: 0;
+}
+
+.signup-form input,
+.signup-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+.birthday-select{
+    display: flex;
+    justify-content: space-between;
+}
+
+.birthday-select select{
+    width: 32%;
+}
+
+.gender {
+    margin: 10px 0;
+}
+
+.signup-btn{
+    width: 100%;
+    background-color: #327c24;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.terms{
+    font-size: 12px;
+    color: #777;
+}
