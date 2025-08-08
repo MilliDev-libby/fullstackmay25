@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>JavaScript 8 Assignment</title>
+        <style>
+            #div{
+                width: 480px; 
+                height: 400px;
+                color: blue;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <div id="div"></div>
+
+        <button id="btn">Print Message</button>
+
+        <script type="text/JavaScript">
+            let button = document.getElementById("btn")
+            let div = document.getElementById("div")
+
+            button.addEventListener("click", function(){
+                div.style.backgroundColor = "Green"
+            })
+
+        </script>
+    </body>
+</html>
