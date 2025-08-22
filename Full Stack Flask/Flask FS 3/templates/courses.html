@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Courses</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f8f8f8; }
+        .container { background: #fff; margin: 40px auto; padding: 30px; width: 700px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);}
+        table { width: 100%; border-collapse: collapse; margin-top: 20px;}
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left;}
+        th { background: #eee; }
+        .add-btn { background: #008000; color: #fff; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;}
+        .remove-link { color: #0074d9; text-decoration: underline; cursor: pointer;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Add a new course</h2>
+        <form method="POST">
+            <label>Name:</label><br>
+            <input type="text" name="name" required style="width: 100%;"><br><br>
+            <label>Description:</label><br>
+            <textarea name="description" required style="width: 100%; height: 60px;"></textarea><br><br>
+            <button type="submit" class="add-btn">Add</button>
+        </form>
+        <h2>Courses</h2>
+        <table>
+            <tr>
+                <th>Course Name</th>
+                <th>Description</th>
+                <th>Date Added</th>
+                <th>Actions</th>
+            </tr>
+            {% for course in courses %}
+            <tr>
+                <td>{{ course.name }}</td>
+                <td>{{ course.description }}</td>
+                <td>{{ course.date_added }}</td>
+                <td>
+                    <a href="{{ url_for('destroy_course', course_id=course.id) }}" class="remove-link">remove</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+</head>
+<body>
+    <h2>Admin Panel</h2>
+    {% if logged_in %}
+        <p>You are logged in!</p>
+        <a href="/logout">Logout</a>
+    {% else %}
+        <p>You are NOT logged in.</p>
+        <a href="/login">Go to Login</a>
+    {% endif %}
+</body>
+</html>
