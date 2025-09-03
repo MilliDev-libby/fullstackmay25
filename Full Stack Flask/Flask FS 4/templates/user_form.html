@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% if user %}Edit User{% else %}Add a New User{% endif %}</title>
+</head>
+<body>
+    <h2>{% if user %}Edit User {{ user.id }}{% else %}Add a New User{% endif %}</h2>
+    <form action="{{ action_url }}" method="POST">
+        <label>First name:</label>
+        <input type="text" name="first_name" value="{{ user.first_name if user else '' }}"><br>
+        <label>Last name:</label>
+        <input type="text" name="last_name" value="{{ user.last_name if user else '' }}"><br>
+        <label>Email:</label>
+        <input type="email" name="email" value="{{ user.email if user else '' }}"><br>
+        <button type="submit">{% if user %}Update{% else %}Create{% endif %}</button>
+    </form>
+    <a href="{{ url_for('users_index') }}">Back to Users</a>
+</body>
+</html>

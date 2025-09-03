@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Appointment</title>
+</head>
+<body>
+    <h2>New Appointment</h2>
+    <form method="POST">
+        <label>Date:</label>
+        <input type="date" name="date" required><br>
+        <label>Time:</label>
+        <input type="time" name="time" required><br>
+        <label>Patient Name:</label>
+        <input type="text" name="patient" required><br>
+        <label>Complaint:</label>
+        <textarea name="complaint" required></textarea><br>
+        <button type="submit">Add Appointment</button>
+        <a href="{{ url_for('index') }}"><button type="button">Cancel</button></a>
+    </form>
+</body>
+</html>
